@@ -1,7 +1,7 @@
 bl_info = {
     "name": "O.P.E. (Object Placement Exporter)",
-    "author": "Restalot",
-    "version": (0, 2),
+    "author": "Igland",
+    "version": (0, 3),
     "blender": (2, 83, 2),
     "location": "View3D > Panel > OPE",
     "description": "Adds placement information to your clipboard.\n Works only for UE4 Editor.",
@@ -50,9 +50,9 @@ class OPE_OT_add_basic(bpy.types.Operator):
                 
             pitch = (float(obj.rotation_euler[1]) * 100) / 1.745329
             pitch = str(pitch)
-            yaw = (float(obj.rotation_euler[0]) * 100) / 1.745329
+            yaw = (float(obj.rotation_euler[2]) * 100) / 1.745329
             yaw = str(yaw)
-            roll = (float(obj.rotation_euler[2]) * 100) / 1.745329
+            roll = (float(obj.rotation_euler[0]) * 100) / 1.745329
             roll = str(roll)
 
 
