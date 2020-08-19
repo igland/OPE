@@ -4,7 +4,7 @@ Object Placement Exporter, from Blender to UE4. A fork of TSTools by Tom Shannon
 ## Purpose of this plugin.
 There currently exists multiple plugins with the function of exporting objects from Blender to Unreal Engine 4. However, when you thereafter want to add them into the scene, you will have to manually place each object and/or write in the different translation information to the object in UE4. With O.P.E., one can now simply produce a script that will create placeholder boxes in the UE4 scene that you can then replace with the objects you want. It will work with the base scale in Blender, and all from the transform, rotation, scale and origin will all be included.
 
-### Instalation guide.
+### Installation guide.
 1) Download the lates release of the code from the releases page, "OPE_v0.?.zip".
 2) Launch Blender, then go from "Edit" ––> "Preferences" ––> "Add-ons".
 3) Click the "Install" button, and then select the downloaded "OPE_v0.?.zip" file.
