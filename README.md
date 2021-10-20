@@ -1,4 +1,4 @@
-# O.P.E.
+# OPE
 Object Placement Exporter, from Blender to UE4. A fork of TSTools by Tom Shannon.
 
 ## Purpose of this plugin.
