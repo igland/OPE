@@ -1,8 +1,8 @@
 bl_info = {
-    "name": "O.P.E. (Object Placement Exporter)",
+    "name": "OPE (Object Placement Exporter)",
     "author": "Igland",
-    "version": (0, 3),
-    "blender": (2, 83, 2),
+    "version": (0, 4),
+    "blender": (2, 93, 5),
     "location": "View3D > Panel > OPE",
     "description": "Adds placement information to your clipboard.\n Works only for UE4 Editor.",
     "warning": "",
@@ -16,12 +16,12 @@ import bpy
 
 class OPE_PT_main_panel(bpy.types.Panel):
     
-    bl_label = "O.P.E (Object Placement Exporter)"
+    bl_label = "OPE (Object Placement Exporter)"
     bl_idname = "OPE_main_panel"
     
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = 'O.P.E.'
+    bl_category = 'OPE'
 
     def draw(self, context):
         layout = self.layout
@@ -43,7 +43,7 @@ class OPE_OT_add_basic(bpy.types.Operator):
                 
             x_location = float(obj.location.x) * 100
             x_location = str(x_location)
-            y_location = float(obj.location.y) * 100
+            y_location = float(obj.location.y) * 100 * -1
             y_location = str(y_location)
             z_location = float(obj.location.z) * 100
             z_location = str(z_location)
